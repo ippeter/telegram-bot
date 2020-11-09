@@ -4,7 +4,8 @@ Telegram bot example for SberCloud.Advanced
 ### Description
 Input:
 - event: base64-encoded JSON structure, which triggered the function (Telegram message)
-- context: security context
+- context: security context. 
+
 Output:
 - HTTP status code 200
 
