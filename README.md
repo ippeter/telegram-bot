@@ -1,5 +1,5 @@
 # telegram-bot
-Telegram bot prototype for SberCloud.Advanced
+Telegram bot prototype for SberCloud.Advanced implemented as a FunctionGraph function.
 
 ### Description
 Input:
@@ -9,7 +9,7 @@ Input:
 Output:
 - HTTP status code 200
 
-SberCloud.Advanced FunctionGraph function.
+
 
 Recieves the ECS name as part of the "event" parameter.
 If ECS with such name exists, the bot gets CPU Util metrics for last 8 hours from the CES service, makes a plot and sends back the plot as a picture using Telegram API.
