@@ -10,13 +10,16 @@ Input:
 Output:
 - HTTP status code 200
 
-
-
 Recieves the ECS name as part of the "event" parameter.
-If ECS with such name exists, the bot gets CPU Util metrics for last 8 hours from the CES service, makes a plot and sends back the plot as a picture using Telegram API.
-If ECS with such name doesn't exist, simply sends back the "ECS not found" message using Telegram API.
+If ECS with such name exists, the bot:
+- gets ECS id and CPU Util metrics for last 8 hours from the CES service using security tokens from the "context" parameter
+- makes a plot
+- sends back the plot as a picture using Telegram API. 
 
-Gets ECS name and corresponding CES metrics using security tokens from the "context" parameter.
+Example picture: 
+![alt Example of CPU Utilization metric](https://github.com/ippeter/telegram-bot/blob/main/stats_example.jpeg)
+
+If ECS with such name doesn't exist, simply sends back the "ECS not found" message using Telegram API.
 
 ### Dependencies
 1. Requires matplotlib
