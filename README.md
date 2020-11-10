@@ -1,5 +1,6 @@
 # telegram-bot
 Telegram bot prototype for SberCloud.Advanced implemented as a FunctionGraph function.
+It could be used as an alarm notification channel in case of some cloud resouce metric is violated.
 
 ### Description
 Input:
