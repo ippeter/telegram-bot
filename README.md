@@ -17,6 +17,7 @@ If ECS with such name exists, the bot:
 - sends back the plot as a picture using Telegram API. 
 
 Example picture: 
+
 ![alt Example of CPU Utilization metric](https://github.com/ippeter/telegram-bot/blob/main/stats_example.jpeg)
 
 If ECS with such name doesn't exist, simply sends back the "ECS not found" message using Telegram API.
